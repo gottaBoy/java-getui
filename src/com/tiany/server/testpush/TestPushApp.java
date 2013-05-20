@@ -18,7 +18,7 @@ public class TestPushApp {
 	private static final String APPID = "KGFsGWP8zy5Nrr66duVTqA";
 	private static final String APPKEY = "JLc63el6i99jwYSVdeXVHA";
 	private static final String MASTERSECRET = "oeZrhLNFHk6PkTEcVSCzo4";
-	private static final String API = "http://sdk.open.api.igexin.com/apiex.htm"; // OpenService½Ó¿ÚµØÖ·
+	private static final String API = "http://sdk.open.api.igexin.com/apiex.htm"; // OpenServiceæ¥å£åœ°å€
 
 	private static IIGtPush mPush;
 
@@ -96,41 +96,41 @@ public class TestPushApp {
 			// + url);
 		}
 
-		// ÍÆËÍÖ÷Àà
+		// æ¨é€ä¸»ç±»
 
 		// pushToApp(title, content_data, logo, url);
 		// try {
 		// AppMessage message = new AppMessage();
 		// //
-		// Í¨ÖªÄ£°æ£ºÖ§³ÖTransmissionTemplate¡¢LinkTemplate¡¢NotificationTemplate£¬´Ë´¦ÒÔLinkTemplateÎªÀı
+		// é€šçŸ¥æ¨¡ç‰ˆï¼šæ”¯æŒTransmissionTemplateã€LinkTemplateã€NotificationTemplateï¼Œæ­¤å¤„ä»¥LinkTemplateä¸ºä¾‹
 		//
 		// LinkTemplate template = new LinkTemplate();
-		// template.setAppId(APPID); // Ó¦ÓÃAPPID
-		// template.setAppkey(APPKEY); // Ó¦ÓÃAPPKEY
-		// // Í¨ÖªÊôĞÔÉèÖÃ£ºÈçÍ¨ÖªµÄ±êÌâ£¬ÄÚÈİ
-		// template.setTitle(title); // Í¨Öª±êÌâ
+		// template.setAppId(APPID); // åº”ç”¨APPID
+		// template.setAppkey(APPKEY); // åº”ç”¨APPKEY
+		// // é€šçŸ¥å±æ€§è®¾ç½®ï¼šå¦‚é€šçŸ¥çš„æ ‡é¢˜ï¼Œå†…å®¹
+		// template.setTitle(title); // é€šçŸ¥æ ‡é¢˜
 		//
-		// template.setText(content_data); // Í¨ÖªÄÚÈİ
+		// template.setText(content_data); // é€šçŸ¥å†…å®¹
 		// template.setLogo(logo);
-		// // template.setIsRing(true); // ÊÕµ½Í¨ÖªÊÇ·ñÏìÁå£¬¿ÉÑ¡£¬Ä¬ÈÏÏìÁå
-		// // template.setIsVibrate(true); // ÊÕµ½Í¨ÖªÊÇ·ñÕğ¶¯£¬¿ÉÑ¡£¬Ä¬ÈÏÕñ¶¯
-		// // template.setIsClearable(true); // Í¨ÖªÊÇ·ñ¿ÉÇå³ı£¬¿ÉÑ¡£¬Ä¬ÈÏ¿ÉÇå³ı
+		// // template.setIsRing(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦å“é“ƒï¼Œå¯é€‰ï¼Œé»˜è®¤å“é“ƒ
+		// // template.setIsVibrate(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦éœ‡åŠ¨ï¼Œå¯é€‰ï¼Œé»˜è®¤æŒ¯åŠ¨
+		// // template.setIsClearable(true); // é€šçŸ¥æ˜¯å¦å¯æ¸…é™¤ï¼Œå¯é€‰ï¼Œé»˜è®¤å¯æ¸…é™¤
 		// template.setUrl("www.baidu.com"); //
-		// µã»÷Í¨Öªºó´ò¿ªµÄÍøÒ³µØÖ·£¬Äã¿ÉÒÔÉè¶¨ÄãÏ£ÍûÌø×ªµÄÍøÒ³µØÖ·Èçhttp: // www.igetui.com
+		// ç‚¹å‡»é€šçŸ¥åæ‰“å¼€çš„ç½‘é¡µåœ°å€ï¼Œä½ å¯ä»¥è®¾å®šä½ å¸Œæœ›è·³è½¬çš„ç½‘é¡µåœ°å€å¦‚http: // www.igetui.com
 		//
 		// message.setData(template);
-		// message.setOffline(true); //ÓÃ»§µ±Ç°²»ÔÚÏßÊ±£¬ÊÇ·ñÀëÏß´æ´¢£¬¿ÉÑ¡£¬Ä¬ÈÏ²»´æ´¢
-		// message.setOfflineExpireTime(72 * 3600 * 1000); //ÀëÏßÓĞĞ§Ê±¼ä£¬µ¥Î»ÎªºÁÃë£¬¿ÉÑ¡
+		// message.setOffline(true); //ç”¨æˆ·å½“å‰ä¸åœ¨çº¿æ—¶ï¼Œæ˜¯å¦ç¦»çº¿å­˜å‚¨ï¼Œå¯é€‰ï¼Œé»˜è®¤ä¸å­˜å‚¨
+		// message.setOfflineExpireTime(72 * 3600 * 1000); //ç¦»çº¿æœ‰æ•ˆæ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’ï¼Œå¯é€‰
 		// List<String> appIdList = new ArrayList<String>();
 		// appIdList.add(APPID);
 		// List<String> phoneTypeList = new ArrayList<String>();//
-		// Í¨Öª½ÓÊÕÕßµÄÊÖ»ú²Ù×÷ÏµÍ³ÀàĞÍ£¬¿ÉÑ¡
+		// é€šçŸ¥æ¥æ”¶è€…çš„æ‰‹æœºæ“ä½œç³»ç»Ÿç±»å‹ï¼Œå¯é€‰
 		// phoneTypeList.add("ANDROID");
 		// // List<String> provinceList = new ArrayList<String>(); //
-		// Í¨Öª½ÓÊÕÕßËùÔÚÊ¡·İ£¬¿ÉÑ¡
-		// // provinceList.add("Õã½­");
-		// // provinceList.add("ÉÏº£");
-		// // provinceList.add("±±¾©");
+		// é€šçŸ¥æ¥æ”¶è€…æ‰€åœ¨çœä»½ï¼Œå¯é€‰
+		// // provinceList.add("æµ™æ±Ÿ");
+		// // provinceList.add("ä¸Šæµ·");
+		// // provinceList.add("åŒ—äº¬");
 		// message.setAppIdList(appIdList);
 		// message.setPhoneTypeList(phoneTypeList);
 		// // message.setProvinceList(provinceList);
@@ -145,34 +145,34 @@ public class TestPushApp {
 			String logo, String url) {
 		try {
 			AppMessage message = new AppMessage();
-			// Í¨ÖªÄ£°æ£ºÖ§³ÖTransmissionTemplate¡¢LinkTemplate¡¢NotificationTemplate£¬´Ë´¦ÒÔLinkTemplateÎªÀı
+			// é€šçŸ¥æ¨¡ç‰ˆï¼šæ”¯æŒTransmissionTemplateã€LinkTemplateã€NotificationTemplateï¼Œæ­¤å¤„ä»¥LinkTemplateä¸ºä¾‹
 
 			LinkTemplate template = new LinkTemplate();
-			template.setAppId(APPID); // Ó¦ÓÃAPPID
-			template.setAppkey(APPKEY); // Ó¦ÓÃAPPKEY
-			// Í¨ÖªÊôĞÔÉèÖÃ£ºÈçÍ¨ÖªµÄ±êÌâ£¬ÄÚÈİ
-			template.setTitle(title); // Í¨Öª±êÌâ
+			template.setAppId(APPID); // åº”ç”¨APPID
+			template.setAppkey(APPKEY); // åº”ç”¨APPKEY
+			// é€šçŸ¥å±æ€§è®¾ç½®ï¼šå¦‚é€šçŸ¥çš„æ ‡é¢˜ï¼Œå†…å®¹
+			template.setTitle(title); // é€šçŸ¥æ ‡é¢˜
 
-			template.setText(content_data); // Í¨ÖªÄÚÈİ
+			template.setText(content_data); // é€šçŸ¥å†…å®¹
 			template.setLogo(logo);
-			// template.setIsRing(true); // ÊÕµ½Í¨ÖªÊÇ·ñÏìÁå£¬¿ÉÑ¡£¬Ä¬ÈÏÏìÁå
-			// template.setIsVibrate(true); // ÊÕµ½Í¨ÖªÊÇ·ñÕğ¶¯£¬¿ÉÑ¡£¬Ä¬ÈÏÕñ¶¯
-			// template.setIsClearable(true); // Í¨ÖªÊÇ·ñ¿ÉÇå³ı£¬¿ÉÑ¡£¬Ä¬ÈÏ¿ÉÇå³ı
-			template.setUrl(url); // µã»÷Í¨Öªºó´ò¿ªµÄÍøÒ³µØÖ·£¬Äã¿ÉÒÔÉè¶¨ÄãÏ£ÍûÌø×ªµÄÍøÒ³µØÖ·Èçhttp: //
+			// template.setIsRing(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦å“é“ƒï¼Œå¯é€‰ï¼Œé»˜è®¤å“é“ƒ
+			// template.setIsVibrate(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦éœ‡åŠ¨ï¼Œå¯é€‰ï¼Œé»˜è®¤æŒ¯åŠ¨
+			// template.setIsClearable(true); // é€šçŸ¥æ˜¯å¦å¯æ¸…é™¤ï¼Œå¯é€‰ï¼Œé»˜è®¤å¯æ¸…é™¤
+			template.setUrl(url); // ç‚¹å‡»é€šçŸ¥åæ‰“å¼€çš„ç½‘é¡µåœ°å€ï¼Œä½ å¯ä»¥è®¾å®šä½ å¸Œæœ›è·³è½¬çš„ç½‘é¡µåœ°å€å¦‚http: //
 									// www.igetui.com
 
 			message.setData(template);
-			message.setOffline(true); // ÓÃ»§µ±Ç°²»ÔÚÏßÊ±£¬ÊÇ·ñÀëÏß´æ´¢£¬¿ÉÑ¡£¬Ä¬ÈÏ²»´æ´¢
-			message.setOfflineExpireTime(72 * 3600 * 1000); // ÀëÏßÓĞĞ§Ê±¼ä£¬µ¥Î»ÎªºÁÃë£¬¿ÉÑ¡
+			message.setOffline(true); // ç”¨æˆ·å½“å‰ä¸åœ¨çº¿æ—¶ï¼Œæ˜¯å¦ç¦»çº¿å­˜å‚¨ï¼Œå¯é€‰ï¼Œé»˜è®¤ä¸å­˜å‚¨
+			message.setOfflineExpireTime(72 * 3600 * 1000); // ç¦»çº¿æœ‰æ•ˆæ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’ï¼Œå¯é€‰
 			List<String> appIdList = new ArrayList<String>();
 			appIdList.add(APPID);
-			List<String> phoneTypeList = new ArrayList<String>();// Í¨Öª½ÓÊÕÕßµÄÊÖ»ú²Ù×÷ÏµÍ³ÀàĞÍ£¬¿ÉÑ¡
+			List<String> phoneTypeList = new ArrayList<String>();// é€šçŸ¥æ¥æ”¶è€…çš„æ‰‹æœºæ“ä½œç³»ç»Ÿç±»å‹ï¼Œå¯é€‰
 			phoneTypeList.add("ANDROID");
 			// List<String> provinceList = new ArrayList<String>(); //
-			// Í¨Öª½ÓÊÕÕßËùÔÚÊ¡·İ£¬¿ÉÑ¡
-			// provinceList.add("Õã½­");
-			// provinceList.add("ÉÏº£");
-			// provinceList.add("±±¾©");
+			// é€šçŸ¥æ¥æ”¶è€…æ‰€åœ¨çœä»½ï¼Œå¯é€‰
+			// provinceList.add("æµ™æ±Ÿ");
+			// provinceList.add("ä¸Šæµ·");
+			// provinceList.add("åŒ—äº¬");
 			message.setAppIdList(appIdList);
 			message.setPhoneTypeList(phoneTypeList);
 			// message.setProvinceList(provinceList);
@@ -185,23 +185,23 @@ public class TestPushApp {
 
 	private static void pushToSingle(String content, String clientId) {
 		try {
-			// µ¥ÍÆÏûÏ¢ÀàĞÍ
+			// å•æ¨æ¶ˆæ¯ç±»å‹
 			SingleMessage message = new SingleMessage();
-			// Í¨ÖªÄ£°æ£ºÖ§³ÖTransmissionTemplate¡¢LinkTemplate¡¢NotificationTemplate£¬´Ë´¦ÒÔTransmissionTemplateÎªÀı
+			// é€šçŸ¥æ¨¡ç‰ˆï¼šæ”¯æŒTransmissionTemplateã€LinkTemplateã€NotificationTemplateï¼Œæ­¤å¤„ä»¥TransmissionTemplateä¸ºä¾‹
 			TransmissionTemplate template = new TransmissionTemplate();
 			template.setAppId(APPID);
 			template.setAppkey(APPKEY);
 			template.setTransmissionContent(content);
-			// ÊÕµ½ÏûÏ¢ÊÇ·ñÁ¢¼´Æô¶¯Ó¦ÓÃ£¬1ÎªÁ¢¼´Æô¶¯£¬2Ôò¹ã²¥µÈ´ı¿Í»§¶Ë×ÔÆô¶¯
+			// æ”¶åˆ°æ¶ˆæ¯æ˜¯å¦ç«‹å³å¯åŠ¨åº”ç”¨ï¼Œ1ä¸ºç«‹å³å¯åŠ¨ï¼Œ2åˆ™å¹¿æ’­ç­‰å¾…å®¢æˆ·ç«¯è‡ªå¯åŠ¨
 			template.setTransmissionType(1);
 			message.setData(template);
-			// message.setOffline(true); //ÓÃ»§µ±Ç°²»ÔÚÏßÊ±£¬ÊÇ·ñÀëÏß´æ´¢,¿ÉÑ¡
-			// message.setOfflineExpireTime(72 * 3600 * 1000); //ÀëÏßÓĞĞ§Ê±¼ä£¬µ¥Î»ÎªºÁÃë£¬¿ÉÑ¡
+			// message.setOffline(true); //ç”¨æˆ·å½“å‰ä¸åœ¨çº¿æ—¶ï¼Œæ˜¯å¦ç¦»çº¿å­˜å‚¨,å¯é€‰
+			// message.setOfflineExpireTime(72 * 3600 * 1000); //ç¦»çº¿æœ‰æ•ˆæ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’ï¼Œå¯é€‰
 			Target target1 = new Target();
 			target1.setAppId(APPID);
 			// "70f34aab2fc0441e560c7ad8286aab79"
 			target1.setClientId(clientId);
-			// µ¥ÍÆ
+			// å•æ¨
 			IPushResult ret = mPush.pushMessageToSingle(message, target1);
 			System.out.println(ret.getResponse().toString());
 		} catch (Exception e) {
@@ -213,35 +213,35 @@ public class TestPushApp {
 	private static void pushToList_notify() {
 		try {
 			ListMessage message = new ListMessage();
-			// Í¨ÖªÄ£°æ£ºÖ§³ÖTransmissionTemplate¡¢LinkTemplate¡¢NotificationTemplate£¬´Ë´¦ÒÔ
-			// NotificationTemplateÎªÀı
+			// é€šçŸ¥æ¨¡ç‰ˆï¼šæ”¯æŒTransmissionTemplateã€LinkTemplateã€NotificationTemplateï¼Œæ­¤å¤„ä»¥
+			// NotificationTemplateä¸ºä¾‹
 			NotificationTemplate template = new NotificationTemplate();
-			template.setAppId(APPID); // Ó¦ÓÃAPPID
-			template.setAppkey(APPKEY); // Ó¦ÓÃAPPKEY
-			// Í¨ÖªÊôĞÔÉèÖÃ£ºÈçÍ¨ÖªµÄ±êÌâ£¬ÄÚÈİ
-			template.setTitle("´Ë´¦ÌîĞ´Í¨Öª±êÌâ"); // Í¨Öª±êÌâ
-			template.setText("´Ë´¦ÌîĞ´Í¨ÖªÄÚÈİ"); // Í¨ÖªÄÚÈİ
-			template.setLogo("push.png"); // Í¨ÖªÍ¼±ê£¬ĞèÒª¿Í»§¶Ë¿ª·¢Ê±Ç¶Èë
-			// template.setIsRing(true); // ÊÕµ½Í¨ÖªÊÇ·ñÏìÁå£¬¿ÉÑ¡£¬Ä¬ÈÏÏìÁå
-			// template.setIsVibrate(true); // ÊÕµ½Í¨ÖªÊÇ·ñÕğ¶¯£¬¿ÉÑ¡£¬Ä¬ÈÏÕñ¶¯
-			// template.setIsClearable(true); // Í¨ÖªÊÇ·ñ¿ÉÇå³ı£¬¿ÉÑ¡£¬Ä¬ÈÏ¿ÉÇå³ı
-			template.setTransmissionType(2); // ÊÕµ½ÏûÏ¢ÊÇ·ñÁ¢¼´Æô¶¯Ó¦ÓÃ£¬1ÎªÁ¢¼´Æô¶¯£¬2Ôò¹ã²¥µÈ´ı¿Í»§¶Ë×ÔÆô¶¯
-			template.setTransmissionContent("ÄãĞèÒªÍ¸´«µÄÄÚÈİ");// Í¸´«ÄÚÈİ£¨µã»÷Í¨ÖªºóSDK½«Í¸´«ÄÚÈİ´«¸øÄãµÄ¿Í»§¶Ë£¬ĞèÒª¿Í»§¶Ë×öÏàÓ¦¿ª·¢£©
+			template.setAppId(APPID); // åº”ç”¨APPID
+			template.setAppkey(APPKEY); // åº”ç”¨APPKEY
+			// é€šçŸ¥å±æ€§è®¾ç½®ï¼šå¦‚é€šçŸ¥çš„æ ‡é¢˜ï¼Œå†…å®¹
+			template.setTitle("æ­¤å¤„å¡«å†™é€šçŸ¥æ ‡é¢˜"); // é€šçŸ¥æ ‡é¢˜
+			template.setText("æ­¤å¤„å¡«å†™é€šçŸ¥å†…å®¹"); // é€šçŸ¥å†…å®¹
+			template.setLogo("push.png"); // é€šçŸ¥å›¾æ ‡ï¼Œéœ€è¦å®¢æˆ·ç«¯å¼€å‘æ—¶åµŒå…¥
+			// template.setIsRing(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦å“é“ƒï¼Œå¯é€‰ï¼Œé»˜è®¤å“é“ƒ
+			// template.setIsVibrate(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦éœ‡åŠ¨ï¼Œå¯é€‰ï¼Œé»˜è®¤æŒ¯åŠ¨
+			// template.setIsClearable(true); // é€šçŸ¥æ˜¯å¦å¯æ¸…é™¤ï¼Œå¯é€‰ï¼Œé»˜è®¤å¯æ¸…é™¤
+			template.setTransmissionType(2); // æ”¶åˆ°æ¶ˆæ¯æ˜¯å¦ç«‹å³å¯åŠ¨åº”ç”¨ï¼Œ1ä¸ºç«‹å³å¯åŠ¨ï¼Œ2åˆ™å¹¿æ’­ç­‰å¾…å®¢æˆ·ç«¯è‡ªå¯åŠ¨
+			template.setTransmissionContent("ä½ éœ€è¦é€ä¼ çš„å†…å®¹");// é€ä¼ å†…å®¹ï¼ˆç‚¹å‡»é€šçŸ¥åSDKå°†é€ä¼ å†…å®¹ä¼ ç»™ä½ çš„å®¢æˆ·ç«¯ï¼Œéœ€è¦å®¢æˆ·ç«¯åšç›¸åº”å¼€å‘ï¼‰
 			message.setData(template);
-			// message.setOffline(true); //ÓÃ»§µ±Ç°²»ÔÚÏßÊ±£¬ÊÇ·ñÀëÏß´æ´¢£¬¿ÉÑ¡£¬Ä¬ÈÏ²»´æ´¢
-			// message.setOfflineExpireTime(72 * 3600 * 1000); //ÀëÏßÓĞĞ§Ê±¼ä£¬µ¥Î»ÎªºÁÃë£¬¿ÉÑ¡
-			// ½ÓÊÕÕß
+			// message.setOffline(true); //ç”¨æˆ·å½“å‰ä¸åœ¨çº¿æ—¶ï¼Œæ˜¯å¦ç¦»çº¿å­˜å‚¨ï¼Œå¯é€‰ï¼Œé»˜è®¤ä¸å­˜å‚¨
+			// message.setOfflineExpireTime(72 * 3600 * 1000); //ç¦»çº¿æœ‰æ•ˆæ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’ï¼Œå¯é€‰
+			// æ¥æ”¶è€…
 			List<Target> targets = new ArrayList<Target>();
 			Target target1 = new Target();
-			// Target target2 = new Target(); //Èç¹ûĞèÒª¿ÉÉèÖÃ¶à¸ö½ÓÊÕÕß
-			target1.setAppId(APPID); // ½ÓÊÕÕß°²×°µÄÓ¦ÓÃµÄAPPID
-			target1.setClientId("70f34aab2fc0441e560c7ad8286aab79"); // ½ÓÊÕÕßµÄClientID
-			// ÈçĞè£¬¿ÉÉèÖÃ¶à¸ö½ÓÊÕÕß
-			// target2.setAppId(APPID2); //½ÓÊÕÕß2°²×°Ó¦ÓÃµÄAPPID
-			// target2.setClientId(CLIENTID2); //½ÓÊÕÕß2µÄClientID
+			// Target target2 = new Target(); //å¦‚æœéœ€è¦å¯è®¾ç½®å¤šä¸ªæ¥æ”¶è€…
+			target1.setAppId(APPID); // æ¥æ”¶è€…å®‰è£…çš„åº”ç”¨çš„APPID
+			target1.setClientId("70f34aab2fc0441e560c7ad8286aab79"); // æ¥æ”¶è€…çš„ClientID
+			// å¦‚éœ€ï¼Œå¯è®¾ç½®å¤šä¸ªæ¥æ”¶è€…
+			// target2.setAppId(APPID2); //æ¥æ”¶è€…2å®‰è£…åº”ç”¨çš„APPID
+			// target2.setClientId(CLIENTID2); //æ¥æ”¶è€…2çš„ClientID
 			targets.add(target1);
 			// targets.add(target2);
-			// ÍÆËÍÇ°Í¨¹ı¸Ã½Ó¿ÚÉêÇë¡°ContentID¡±
+			// æ¨é€å‰é€šè¿‡è¯¥æ¥å£ç”³è¯·â€œContentIDâ€
 			String contentId = mPush.getContentId(message);
 			IPushResult ret = mPush.pushMessageToList(contentId, targets);
 			System.out.println(ret.getResponse().toString());
@@ -254,39 +254,39 @@ public class TestPushApp {
 	private static void pushToList(String content, List<String> client_ids) {
 		try {
 			ListMessage message = new ListMessage();
-			// Í¨ÖªÄ£°æ£ºÖ§³ÖTransmissionTemplate¡¢LinkTemplate¡¢NotificationTemplate£¬´Ë´¦ÒÔ
-			// NotificationTemplateÎªÀı
+			// é€šçŸ¥æ¨¡ç‰ˆï¼šæ”¯æŒTransmissionTemplateã€LinkTemplateã€NotificationTemplateï¼Œæ­¤å¤„ä»¥
+			// NotificationTemplateä¸ºä¾‹
 			NotificationTemplate template = new NotificationTemplate();
-			template.setAppId(APPID); // Ó¦ÓÃAPPID
-			template.setAppkey(APPKEY); // Ó¦ÓÃAPPKEY
-			// Í¨ÖªÊôĞÔÉèÖÃ£ºÈçÍ¨ÖªµÄ±êÌâ£¬ÄÚÈİ
-			// template.setTitle("´Ë´¦ÌîĞ´Í¨Öª±êÌâ"); // Í¨Öª±êÌâ
-			// template.setText("´Ë´¦ÌîĞ´Í¨ÖªÄÚÈİ"); // Í¨ÖªÄÚÈİ
-			// template.setLogo("push.png"); // Í¨ÖªÍ¼±ê£¬ĞèÒª¿Í»§¶Ë¿ª·¢Ê±Ç¶Èë
-			// template.setIsRing(true); // ÊÕµ½Í¨ÖªÊÇ·ñÏìÁå£¬¿ÉÑ¡£¬Ä¬ÈÏÏìÁå
-			// template.setIsVibrate(true); // ÊÕµ½Í¨ÖªÊÇ·ñÕğ¶¯£¬¿ÉÑ¡£¬Ä¬ÈÏÕñ¶¯
-			// template.setIsClearable(true); // Í¨ÖªÊÇ·ñ¿ÉÇå³ı£¬¿ÉÑ¡£¬Ä¬ÈÏ¿ÉÇå³ı
-			template.setTransmissionType(2); // ÊÕµ½ÏûÏ¢ÊÇ·ñÁ¢¼´Æô¶¯Ó¦ÓÃ£¬1ÎªÁ¢¼´Æô¶¯£¬2Ôò¹ã²¥µÈ´ı¿Í»§¶Ë×ÔÆô¶¯
-			template.setTransmissionContent("ÄãĞèÒªÍ¸´«µÄÄÚÈİ");// Í¸´«ÄÚÈİ£¨µã»÷Í¨ÖªºóSDK½«Í¸´«ÄÚÈİ´«¸øÄãµÄ¿Í»§¶Ë£¬ĞèÒª¿Í»§¶Ë×öÏàÓ¦¿ª·¢£©
+			template.setAppId(APPID); // åº”ç”¨APPID
+			template.setAppkey(APPKEY); // åº”ç”¨APPKEY
+			// é€šçŸ¥å±æ€§è®¾ç½®ï¼šå¦‚é€šçŸ¥çš„æ ‡é¢˜ï¼Œå†…å®¹
+			// template.setTitle("æ­¤å¤„å¡«å†™é€šçŸ¥æ ‡é¢˜"); // é€šçŸ¥æ ‡é¢˜
+			// template.setText("æ­¤å¤„å¡«å†™é€šçŸ¥å†…å®¹"); // é€šçŸ¥å†…å®¹
+			// template.setLogo("push.png"); // é€šçŸ¥å›¾æ ‡ï¼Œéœ€è¦å®¢æˆ·ç«¯å¼€å‘æ—¶åµŒå…¥
+			// template.setIsRing(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦å“é“ƒï¼Œå¯é€‰ï¼Œé»˜è®¤å“é“ƒ
+			// template.setIsVibrate(true); // æ”¶åˆ°é€šçŸ¥æ˜¯å¦éœ‡åŠ¨ï¼Œå¯é€‰ï¼Œé»˜è®¤æŒ¯åŠ¨
+			// template.setIsClearable(true); // é€šçŸ¥æ˜¯å¦å¯æ¸…é™¤ï¼Œå¯é€‰ï¼Œé»˜è®¤å¯æ¸…é™¤
+			template.setTransmissionType(2); // æ”¶åˆ°æ¶ˆæ¯æ˜¯å¦ç«‹å³å¯åŠ¨åº”ç”¨ï¼Œ1ä¸ºç«‹å³å¯åŠ¨ï¼Œ2åˆ™å¹¿æ’­ç­‰å¾…å®¢æˆ·ç«¯è‡ªå¯åŠ¨
+			template.setTransmissionContent(content);// é€ä¼ å†…å®¹ï¼ˆç‚¹å‡»é€šçŸ¥åSDKå°†é€ä¼ å†…å®¹ä¼ ç»™ä½ çš„å®¢æˆ·ç«¯ï¼Œéœ€è¦å®¢æˆ·ç«¯åšç›¸åº”å¼€å‘ï¼‰
 			message.setData(template);
-			// message.setOffline(true); //ÓÃ»§µ±Ç°²»ÔÚÏßÊ±£¬ÊÇ·ñÀëÏß´æ´¢£¬¿ÉÑ¡£¬Ä¬ÈÏ²»´æ´¢
-			// message.setOfflineExpireTime(72 * 3600 * 1000); //ÀëÏßÓĞĞ§Ê±¼ä£¬µ¥Î»ÎªºÁÃë£¬¿ÉÑ¡
-			// ½ÓÊÕÕß
+			// message.setOffline(true); //ç”¨æˆ·å½“å‰ä¸åœ¨çº¿æ—¶ï¼Œæ˜¯å¦ç¦»çº¿å­˜å‚¨ï¼Œå¯é€‰ï¼Œé»˜è®¤ä¸å­˜å‚¨
+			// message.setOfflineExpireTime(72 * 3600 * 1000); //ç¦»çº¿æœ‰æ•ˆæ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’ï¼Œå¯é€‰
+			// æ¥æ”¶è€…
 			List<Target> targets = new ArrayList<Target>();
 
 			for (String cid : client_ids) {
 				Target target = new Target();
-				// Target target2 = new Target(); //Èç¹ûĞèÒª¿ÉÉèÖÃ¶à¸ö½ÓÊÕÕß
-				target.setAppId(APPID); // ½ÓÊÕÕß°²×°µÄÓ¦ÓÃµÄAPPID
-				target.setClientId(cid); // ½ÓÊÕÕßµÄClientID
-				// ÈçĞè£¬¿ÉÉèÖÃ¶à¸ö½ÓÊÕÕß
-				// target2.setAppId(APPID2); //½ÓÊÕÕß2°²×°Ó¦ÓÃµÄAPPID
-				// target2.setClientId(CLIENTID2); //½ÓÊÕÕß2µÄClientID
+				// Target target2 = new Target(); //å¦‚æœéœ€è¦å¯è®¾ç½®å¤šä¸ªæ¥æ”¶è€…
+				target.setAppId(APPID); // æ¥æ”¶è€…å®‰è£…çš„åº”ç”¨çš„APPID
+				target.setClientId(cid); // æ¥æ”¶è€…çš„ClientID
+				// å¦‚éœ€ï¼Œå¯è®¾ç½®å¤šä¸ªæ¥æ”¶è€…
+				// target2.setAppId(APPID2); //æ¥æ”¶è€…2å®‰è£…åº”ç”¨çš„APPID
+				// target2.setClientId(CLIENTID2); //æ¥æ”¶è€…2çš„ClientID
 				targets.add(target);
 			}
 
 			// targets.add(target2);
-			// ÍÆËÍÇ°Í¨¹ı¸Ã½Ó¿ÚÉêÇë¡°ContentID¡±
+			// æ¨é€å‰é€šè¿‡è¯¥æ¥å£ç”³è¯·â€œContentIDâ€
 			String contentId = mPush.getContentId(message);
 			IPushResult ret = mPush.pushMessageToList(contentId, targets);
 			System.out.println(ret.getResponse().toString());
